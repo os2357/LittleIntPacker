@@ -94,8 +94,8 @@ uint32_t * get_random_array_from_bit_width_d1(uint32_t length, uint32_t bit) {
     return answer;
 }
 
-void demo128() {
-    const uint32_t length = 128;
+void demo64k() {
+    const uint32_t length = 65536;
     uint32_t bit;
     printf("# --- %s\n", __func__);
     printf("# compressing %d integers\n",length);
@@ -120,8 +120,8 @@ void demo128() {
     printf("\n\n"); /* two blank lines are required by gnuplot */
 }
 
-void turbodemo128() {
-    const uint32_t length = 128;
+void turbodemo64k() {
+    const uint32_t length = 65536;
     uint32_t bit;
     printf("# --- %s\n", __func__);
     printf("# compressing %d integers\n",length);
@@ -146,8 +146,8 @@ void turbodemo128() {
     printf("\n\n"); /* two blank lines are required by gnuplot */
 }
 
-void bmidemo128() {
-    const uint32_t length = 128;
+void bmidemo64k() {
+    const uint32_t length = 65536;
     uint32_t bit;
     printf("# --- %s\n", __func__);
     printf("# compressing %d integers\n",length);
@@ -172,8 +172,8 @@ void bmidemo128() {
     printf("\n\n"); /* two blank lines are required by gnuplot */
 }
 
-void horizontaldemo128() {
-    const uint32_t length = 128;
+void horizontaldemo64k() {
+    const uint32_t length = 65536;
     uint32_t bit;
     printf("# --- %s\n", __func__);
     printf("# compressing %d integers\n",length);
@@ -198,8 +198,8 @@ void horizontaldemo128() {
     printf("\n\n"); /* two blank lines are required by gnuplot */
 }
 
-void scdemo128() {
-    const uint32_t length = 128;
+void scdemo64k() {
+    const uint32_t length = 65536;
     uint32_t bit;
     printf("# --- %s\n", __func__);
     printf("# compressing %d integers\n",length);
@@ -228,11 +228,11 @@ void scdemo128() {
 
 
 int main() {
-    demo128();
-    turbodemo128();
-    bmidemo128();
-    horizontaldemo128();
-    scdemo128();
+    demo64k();
+    turbodemo64k();
+    bmidemo64k();
+    horizontaldemo64k();
+    scdemo64k();
 
     return 0;
 }
